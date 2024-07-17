@@ -39,6 +39,7 @@ nav ul li a {
 /* Efeito de hover nos links de navegação */
 nav ul li a:hover {
     color: #FFD700; /* Mudança de cor ao passar o mouse */
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho */
 }
 
 /* Estilo do main content */
@@ -62,6 +63,12 @@ main {
     text-align: center; /* Centraliza o conteúdo */
 }
 
+/* Estilo das imagens responsivas */
+.responsive-img {
+    max-width: 100%; /* Largura máxima da imagem */
+    height: auto; /* Altura automática */
+}
+
 /* Estilo dos comentários */
 .comments {
     margin-top: 20px; /* Espaçamento acima dos comentários */
@@ -74,29 +81,38 @@ main {
 }
 
 .comments ul {
-    list-style-type: none; /* Remove bullets da lista de comentários */
-    padding: 0; /* Remove espaçamento interno */
+    list-style: none; /* Remove bullets da lista */
+    padding: 0; /* Remove espaçamentos */
+}
+
+.comments ul li {
+    background-color: #555; /* Fundo cinza */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Espaçamento abaixo dos itens */
+    border-radius: 5px; /* Bordas arredondadas */
 }
 
 .comments textarea {
-    width: 100%; /* Largura total do textarea */
-    margin-top: 10px; /* Espaçamento acima do textarea */
-    padding: 10px; /* Espaçamento interno do textarea */
-    border: 1px solid #ccc; /* Borda cinza */
-    resize: vertical; /* Permite redimensionar verticalmente */
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Espaçamento abaixo */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: none; /* Remove borda */
+    resize: vertical; /* Permite redimensionamento vertical */
 }
 
 .comments button {
-    margin-top: 10px; /* Espaçamento acima do botão */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    background-color: #333; /* Cor de fundo do botão */
-    color: white; /* Texto branco */
+    background-color: #FFD700; /* Fundo dourado */
+    color: black; /* Texto preto */
+    padding: 10px 20px; /* Espaçamento interno */
     border: none; /* Remove borda */
-    cursor: pointer; /* Cursor ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mãozinha */
+    transition: all 0.3s ease; /* Transição suave */
 }
 
 .comments button:hover {
-    background-color: #555; /* Mudança de cor ao passar o mouse */
+    background-color: #FFA500; /* Fundo laranja ao passar o mouse */
 }
 
 /* Estilo do footer */
@@ -104,17 +120,8 @@ footer {
     background-color: #333; /* Fundo cinza escuro */
     color: white; /* Texto branco */
     text-align: center; /* Centraliza o texto */
-    padding: 10px 0; /* Espaçamento vertical */
-    position: fixed; /* Fixa o footer no final da página */
+    padding: 10px 0; /* Espaçamento interno */
+    position: fixed; /* Fixa no rodapé */
     width: 100%; /* Largura total */
-    bottom: 0; /* Fixa no rodapé */
-}
-
-/* Estilização dos links no footer */
-footer a {
-    color: white; /* Texto branco */
-    text-decoration: none; /* Remove sublinhado */
-}
-img{
-    size: 10px;
+    bottom: 0; /* Alinha ao rodapé */
 }
