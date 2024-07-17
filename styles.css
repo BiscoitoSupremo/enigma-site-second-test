@@ -1,127 +1,118 @@
-/* Define o estilo do body */
 body {
-    background-color: black; /* Fundo preto */
-    color: white; /* Texto branco */
-    font-family: Arial, sans-serif; /* Fonte padrão */
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove espaçamentos padrão */
+    background-color: black; 
+    color: white; 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
 }
 
-/* Estilo do header */
 header {
-    background-color: #333; /* Fundo cinza escuro */
-    padding: 10px 0; /* Espaçamento vertical */
-    text-align: center; /* Centraliza o conteúdo */
+    background-color: #333; 
+    padding: 10px 0; 
+    text-align: center; 
 }
 
-/* Estilo da navegação no header */
 nav ul {
-    list-style: none; /* Remove bullets da lista */
-    display: flex; /* Usa flexbox para alinhar os itens */
-    justify-content: center; /* Centraliza os itens */
-    margin: 0; /* Remove margens */
-    padding: 0; /* Remove espaçamentos */
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    margin: 0; 
+    padding: 0; 
 }
 
-/* Estilo dos itens de navegação */
+
 nav ul li {
-    margin: 0 15px; /* Espaçamento horizontal entre os itens */
+    margin: 0 15px; 
 }
 
-/* Estilo dos links de navegação */
 nav ul li a {
-    color: white; /* Texto branco */
-    text-decoration: none; /* Remove sublinhado */
-    font-size: 18px; /* Tamanho da fonte */
-    transition: all 0.3s ease; /* Transição suave */
+    color: white;
+    text-decoration: none; 
+    font-size: 18px; 
+    transition: all 0.3s ease; 
 }
 
-/* Efeito de hover nos links de navegação */
 nav ul li a:hover {
-    color: #FFD700; /* Mudança de cor ao passar o mouse */
-    transform: scale(1.1); /* Aumenta ligeiramente o tamanho */
+    color: #ff0000; 
+    transform: scale(1.1); 
 }
 
-/* Estilo do main content */
 main {
-    width: 80%; /* Largura máxima do conteúdo */
-    margin: 20px auto; /* Centraliza horizontalmente com um espaço de margem */
-    text-align: center; /* Centraliza o conteúdo */
+    width: 80%; 
+    margin: 20px auto; 
+    text-align: center; 
 }
 
-/* Estilo dos posts */
 .post {
-    background-color: #444; /* Fundo cinza mais escuro */
-    padding: 20px; /* Espaçamento interno */
-    margin: 0 auto 20px; /* Centraliza horizontalmente com espaço abaixo */
-    max-width: 600px; /* Largura máxima dos posts */
-    text-align: left; /* Alinha texto à esquerda */
+    background-color: #444; 
+    padding: 20px; 
+    margin: 0 auto 20px; 
+    max-width: 600px; 
+    text-align: left; 
 }
 
-/* Estilo do conteúdo dos posts */
 .post-content {
-    text-align: center; /* Centraliza o conteúdo */
+    text-align: center; 
 }
 
-/* Estilo das imagens responsivas */
 .responsive-img {
-    max-width: 100%; /* Largura máxima da imagem */
-    height: auto; /* Altura automática */
+    max-width: 100%;
+    height: auto; 
 }
 
-/* Estilo dos comentários */
+
 .comments {
-    margin-top: 20px; /* Espaçamento acima dos comentários */
-    text-align: left; /* Alinha texto à esquerda */
+    margin-top: 20px;
+    text-align: left; 
 }
 
 .comments h3 {
-    font-size: 18px; /* Tamanho da fonte do título dos comentários */
-    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    font-size: 18px; 
+    margin-bottom: 10px;
 }
 
 .comments ul {
-    list-style: none; /* Remove bullets da lista */
-    padding: 0; /* Remove espaçamentos */
+    list-style: none; 
+    padding: 0; 
 }
 
 .comments ul li {
-    background-color: #555; /* Fundo cinza */
-    padding: 10px; /* Espaçamento interno */
-    margin-bottom: 10px; /* Espaçamento abaixo dos itens */
-    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #555; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border-radius: 5px; 
 }
 
 .comments textarea {
-    width: 100%; /* Largura total */
-    padding: 10px; /* Espaçamento interno */
-    margin-bottom: 10px; /* Espaçamento abaixo */
-    border-radius: 5px; /* Bordas arredondadas */
-    border: none; /* Remove borda */
-    resize: vertical; /* Permite redimensionamento vertical */
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border-radius: 5px; 
+    border: none; 
+    resize: vertical; 
 }
 
 .comments button {
-    background-color: #FFD700; /* Fundo dourado */
-    color: black; /* Texto preto */
-    padding: 10px 20px; /* Espaçamento interno */
-    border: none; /* Remove borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor de mãozinha */
-    transition: all 0.3s ease; /* Transição suave */
+    background-color: #f70800; 
+    color: black; 
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: all 0.3s ease; 
 }
 
 .comments button:hover {
-    background-color: #FFA500; /* Fundo laranja ao passar o mouse */
+    background-color: #550000; 
 }
 
 /* Estilo do footer */
 footer {
-    background-color: #333; /* Fundo cinza escuro */
-    color: white; /* Texto branco */
-    text-align: center; /* Centraliza o texto */
-    padding: 10px 0; /* Espaçamento interno */
-    position: fixed; /* Fixa no rodapé */
-    width: 100%; /* Largura total */
-    bottom: 0; /* Alinha ao rodapé */
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 10px 0; 
+    position: fixed; 
+    width: 100%; 
+    bottom: 0; 
 }
